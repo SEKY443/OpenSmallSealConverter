@@ -1,5 +1,7 @@
 # OpenSmallSealConverter
 
+**Try it: https://seky443.github.io/OpenSmallSealConverter/**
+
 A client-side converter from Chinese text to Unicode Small Seal characters
 (Unicode 18.0, block U+3D000–U+3FC3F). The UI is available in Traditional
 Chinese, Simplified Chinese, and English.
@@ -131,6 +133,31 @@ original orthography. `npm run evaluate -- <path to yuliao.jsonl>` reports
 coverage on it and on Big5 frequent characters, and refreshes the lists in
 `data/review/`. Tongjia (通假) characters are
 kept as written, since they are the original text.
+
+## Sources and links 資料來源與相關連結
+
+### Unicode Small Seal 小篆編碼
+
+- [Unicode 18.0 Small Seal code chart (U+3D000–U+3FC3F)](https://www.unicode.org/charts/PDF/Unicode-18.0/U180-3D000.pdf)
+- [SealSources.txt](https://www.unicode.org/Public/18.0.0/ucd/SealSources.txt): the official source and modern-character data (`kSEAL_MCJK`) this tool is built on
+- [WG2 N5318R: Proposal to encode Four-Column Small Seal Script in UCS](https://www.unicode.org/wg2/docs/n5318R-Proposal%20to%20encode%20Four-Column%20Small%20Seal%20Script%20in%20UCS.pdf) (TCA and China): editions, unification and modern-character principles
+- [WG2 N5344R: final Small Seal proposal](http://www.unicode.org/wg2/docs/n5344R-SmallSealProposal.pdf) and [UTC #185 minutes](https://www.unicode.org/L2/L2025/25226.htm), where the encoding was approved
+- [UAX #38: Unicode Han Database (Unihan)](https://www.unicode.org/reports/tr38/): variant relations used to verify mappings
+
+### Conversion data 轉換資料
+
+- [OpenCC](https://github.com/BYVoid/OpenCC): Small Seal variant table and simplified-to-traditional dictionaries (Apache-2.0)
+- [說文解字 shuowen.org](https://www.shuowen.org/) and its data on GitHub, [shuowenjiezi/shuowen](https://github.com/shuowenjiezi/shuowen): headwords, variants, and the notes of Xu Xuan (徐鉉) and Duan Yucai (段玉裁) (Apache-2.0)
+- [尚古字型 Shanggu fonts](https://github.com/GuiWonder/Shanggu): new-form to inherited-form (新舊字形) table (OFL-1.1)
+
+### Font 字型
+
+- [崇羲篆體 Chong Xi Small Seal](https://xiaoxue.iis.sinica.edu.tw/chongxi/) by 王心怡 and 季旭昇, released by [中央研究院 小學堂](https://xiaoxue.iis.sinica.edu.tw/)
+
+### Testing and verification 測試與查證
+
+- [通假字資源庫 tongjiazi-resources](https://github.com/frederick-wang/tongjiazi-resources) (MIT): pre-Qin sentences used to measure coverage; Wang et al., [古汉语通假字资源库的构建及应用研究](https://aclanthology.org/2023.ccl-1.47), CCL 2023
+- [zi.tools 字統网](https://zi.tools/): used to check individual variant relations by hand, and linked from each character's detail panel
 
 ## License
 
