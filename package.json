@@ -1,0 +1,33 @@
+{
+  "name": "open-small-seal-converter",
+  "private": true,
+  "license": "MIT",
+  "author": "SEKY443",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEKY443/OpenSmallSealConverter.git"
+  },
+  "version": "0.1.0",
+  "description": "Convert Chinese text to Unicode 18.0 Small Seal script, with cited original-form (本字) substitution.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "test": "node --test src/*.test.ts",
+    "data": "python3 scripts/build_data.py",
+    "variants": "python3 scripts/build_variants.py --shuowen",
+    "notes": "python3 scripts/extract_note_forms.py",
+    "original-forms": "python3 scripts/build_original_forms.py",
+    "s2t": "python3 scripts/build_s2t.py",
+    "evaluate": "node scripts/evaluate.ts",
+    "icons": "python3 scripts/build_icons.py",
+    "font:coverage": "python3 scripts/font_coverage.py public/fonts/chongxi.otf"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}

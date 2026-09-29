@@ -1,0 +1,16 @@
+node_modules/
+__pycache__/
+dist/
+.DS_Store
+
+# Fonts and reference files whose licenses do not allow redistribution.
+# The Chong Xi font may be redistributed unmodified with attribution; see NOTICE.
+public/fonts/*
+!public/fonts/chongxi.otf
+!public/fonts/chongxi.coverage.json
+data/*.ttf
+data/*.otf
+data/*.pdf
+
+# Local release notes
+CHANGELOG.local.md
