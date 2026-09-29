@@ -1,0 +1,32 @@
+OpenSmallSealConverter
+======================
+
+This project redistributes data derived from the following sources.
+
+Unicode Character Database (data/SealSources.txt, data/Unihan_Variants.txt,
+public/data/seal-map.json)
+  Copyright © 1991-2026 Unicode, Inc.
+  Unicode License v3: https://www.unicode.org/license.txt
+
+OpenCC (data/SealVariants.txt, public/data/seal-variants.json;
+data/OpenCC-STCharacters.txt, data/OpenCC-STPhrases.txt, public/data/s2t.json)
+  https://github.com/BYVoid/OpenCC
+  Licensed under the Apache License, Version 2.0.
+
+Chong Xi Small Seal font 崇羲篆體 (public/fonts/chongxi.otf)
+  本轉換器採用由王心怡與季旭昇製作、中研院小學堂釋出之『崇羲篆體』。
+  Redistributed unmodified; free for commercial use with attribution, no
+  modification permitted. The site icons (public/favicon.png,
+  public/apple-touch-icon.png) render its 篆 glyph (scripts/build_icons.py).
+
+Shanggu fonts data (data/Shanggu-stoneo.dt, used in public/data/seal-variants.json
+and public/data/original-forms.json)
+  https://github.com/GuiWonder/Shanggu, commit 0e50b210b6448510ec51b20dfc1e556cd62fb969
+  SIL Open Font License 1.1; see data/licenses/Shanggu-OFL.txt.
+
+shuowen.org data (public/data/seal-variants.json, public/data/original-forms.json,
+data/original-forms.notes.tsv)
+  https://github.com/shuowenjiezi/shuowen, commit 6553a350763ce4feca2c5d1cc2cad7e594dc2975
+  Copyright 2019 Shuowen.org. Licensed under the Apache License, Version 2.0.
+  Modified: headword search aliases ("indexes") extracted and filtered into a
+  substitution table by scripts/build_original_forms.py.
