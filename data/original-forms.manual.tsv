@@ -1,0 +1,71 @@
+# Manually curated substitutions: later character -> Shuowen headword.
+# Entries here take precedence over those extracted from the shuowen.org data.
+# Format: later<TAB>headword<TAB>kind (original|simplified|exclude)<TAB>source citation
+# "exclude" blocks an automatic substitution that is wrong; headword is "-".
+雎	鴡	original	說文·鳥部：「鴡，王鴡也。从鳥且聲。」（《詩·周南·關雎》「關關雎鳩」之雎）
+亨	亯	original	說文·亯部「亯，獻也」；亨、享、烹皆由亯分化，zi.tools：亯「同享」
+志	-	exclude	「誌」為大徐本新附字（kSEAL_THXSrc TH-X072，小徐本、段注本皆無），晚於「志」，不可作其本字
+嶄	磛	original	說文·石部「磛，礹，石也」；段注「磛礹古多用爲連綿字。上林賦嶄巖嵾嵳……皆卽此二篆也」
+他	佗	original	段注·佗：「𥻳變佗爲他，用爲彼之偁。古相問無它乎，衹作它。」
+住	駐	original	段注·侸：「今俗用住字，乃駐逗二字之俗，非侸字之俗也。」
+旒	瑬	original	說文·玉部「瑬，垂玉也。冕飾」；段注：「玉藻从俗字作旒。」
+橡	様	original	說文·木部「様，栩實」；段注：「樣橡正俗字……樣俗作橡。」
+皁	草	original	說文·艸部「草，草斗，櫟實也」；段注：「草斗之字俗作皁、作皂。」
+䊷	-	exclude	段注「鄭意今之䊷字」之「鄭意」指鄭玄之意，非字頭，抽取有誤
+泊	-	exclude	段注「俗作泊」主語不明，未能確認本字
+瘙	-	exclude	段注「俗作瘙」主語不明，未能確認本字
+𢈻	-	exclude	段注原文「古今字詁今字作𢈻」為書名，抽取有誤
+# zi.tools-reviewed batch (2026-09-29): candidates from zi.tools「同」relations, each checked by hand.
+弊	敝	original	說文「敝」：帗也。一曰敗衣。从攴从㡀，㡀亦聲。；zi.tools：敝「同=弊 1.毛病 2.倒仆」
+隧	隊	original	說文「隊」：從高隊也。从𨸏㒸聲。；zi.tools：隊「同=隧 1.墓道 2.特指山谷中险阻的道」
+喻	諭	original	說文「諭」：告也。从言俞聲。；zi.tools：喻「同=諭 告知」
+呵	訶	original	說文「訶」：大言而怒也。从言可聲。；zi.tools：呵「同=訶 大声喝叱；斥责:::to sco」
+偷	媮	original	說文「媮」：巧黠也。从女俞聲。；zi.tools：媮「同=偷 苟且」
+瘠	膌	original	說文「膌」：瘦也。从肉𦟝聲。；zi.tools：膌「同=瘠 瘦」
+魏	巍	original	說文「巍」：高也。从嵬委聲。；zi.tools：魏「同=巍 高大的样子」
+板	版	original	說文「版」：判也。从片反聲。；zi.tools：板「同=版 将木头分割成薄片」
+撰	譔	original	說文「譔」：專教也。从言巽聲。；zi.tools：譔「同=撰 记述；著录」
+饜	厭	original	說文「厭」：笮也。从厂猒聲。一曰合也。；zi.tools：饜「同=厭 憎恶；嫌弃」
+裒	𦥑	original	說文「𦥑」：叉手也。从纟、纠。凡𦥑之屬皆从𦥑。；zi.tools：𦥑「同=裒 聚」
+傒	徯	original	說文「徯」：待也。从彳奚聲。；zi.tools：傒「同=徯 等待」
+耶	邪	original	說文「邪」：琅邪郡。从邑牙聲。；zi.tools：耶「同=邪 不正当」
+揉	煣	original	說文「煣」：屈申木也。从火、柔，柔亦聲。；zi.tools：揉「同=煣 使木条弯曲或伸直:::to be」
+跗	柎	original	說文「柎」：闌足也。从木付聲。；zi.tools：跗「同=柎 1.花萼房 2.物体的足部」
+憍	驕	original	說文「驕」：馬高六尺爲驕。从馬喬聲。《詩》曰：“；zi.tools：憍「同=驕 1.骄傲 2.放纵 3.怜爱」
+卞	弁	original	說文「覍」重文「弁」：或㝸字。；zi.tools：弁「同=卞 地名，古鲁邑 在山东省泗水县东，」
+逌	攸	original	說文「攸」：行水也。从攴从人，水省。；zi.tools：逌「同=攸 1.气行貌；舒适自得貌 2.所」
+媵	㑞	original	說文「㑞」：送也。从人灷聲。呂不韋曰：有侁氏以伊；zi.tools：㑞「同=媵」
+偝	背	original	說文「背」：𦟝也。从肉北聲。；zi.tools：偝「同=背 1.背对着 2.违背；背弃」
+懃	勤	original	說文「勤」：勞也。从力𡏳聲。；zi.tools：懃「同=勤 1.勤劳；劳苦 2.努力；尽力」
+畾	靁	original	說文「靁」：陰陽薄動靁雨，生物者也。从雨，畾象回；zi.tools：畾「同=靁(雷)」
+垺	郛	original	說文「郛」：郭也。从邑孚聲。；zi.tools：垺「同=郛 外城」
+墝	磽	original	說文「磽」：礊石也。从石堯聲。；zi.tools：磽「同=墝 土壤坚硬贫瘠 如：硗瘠；硗薄；硗」
+採	采	original	說文「采」：捋取也。从木从爪。；zi.tools：採「同=采 1.摘取 2.开采；发掘 3.选」
+椒	茮	original	說文「茮」：茮莍。从艸尗聲。；zi.tools：茮「同=椒 花椒」
+謡	䚻	original	說文「䚻」：徒歌。从言、肉。；zi.tools：䚻「同=謡 歌谣」
+礦	卝	original	說文「磺」重文「卝」：古文礦。《周禮》有卝人。；zi.tools：卝「同=礦」
+菽	尗	original	說文「尗」：豆也。象尗豆生之形也。凡尗之屬皆从尗；zi.tools：尗「同=菽」
+孥	帑	original	說文「帑」：金幣所藏也。从巾奴聲。；zi.tools：帑「同=孥 1.子；子孙 2.妻子、儿女的合」
+# Second batch (2026-09-29): remaining pre-Qin gaps, checked against Shuowen text, Duan notes and zi.tools.
+彌	镾	original	說文·長部「镾，久長也」；zi.tools：镾「同=彌」
+懸	縣	original	段注·縣：「古懸挂字皆如此作」
+乞	气	original	段注·气：「借爲气假於人之气，又省作乞」
+穢	薉	original	說文·艸部「薉，蕪也」；段注：「今作穢」
+堙	垔	original	說文·土部「垔，塞也。《尚書》曰：鯀垔洪水」（今本《尚書》作「堙」）
+贄	𡠗	original	段注·摯：「周禮六贄字，許書作𡠗」
+趾	止	original	說文·止部「止，下基也。象艸木出有址，故以止爲足」
+悦	說	original	段注·說：「說者、今之悅字」（悦為悅之異寫）
+熟	孰	original	說文·丮部「𦏧（孰），食飪也」；段注：「後人乃分別𤍨爲生𤍨、孰爲誰孰」
+# Fourth batch (2026-09-29): traditional forms that simplified input converts to (OpenCC), whose
+# original character is the simplified one; each with zi.tools or Duan evidence.
+佔	占	original	zi.tools：佔「同=占 据有」；占「也作=佔」
+諮	咨	original	說文·口部「咨，謀事曰咨」；zi.tools：諮「同=咨」
+槓	杠	original	說文·木部「杠，牀前橫木也」；zi.tools：槓「同=杠」
+燻	熏	original	說文·屮部「熏，火煙上出也」；zi.tools：燻「同=熏」
+僱	雇	original	zi.tools：僱「同=雇」
+餚	肴	original	說文·肉部「肴，啖也」；zi.tools：餚「同=肴 熟的肉类食物」
+痾	疴	original	說文·疒部「疴，病也」；zi.tools：痾「同=疴 病」
+亙	亘	original	zi.tools：亙「同「亘」」
+蒞	莅	original	zi.tools：蒞「同=莅」（莅即說文立部「䇐，臨也」）
+滾	混	original	段注·混：「俗字作滚」（滾為滚之繁體）
+鼴	鼢	original	段注·鼢：「俗作鼹」；zi.tools：鼹「同=鼴」
