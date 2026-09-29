@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:" />
+    <title>小篆轉換器 · Open Small Seal Converter</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="masthead">
+        <div class="brand">
+          <span class="seal-mark" aria-hidden="true">篆</span>
+          <div>
+            <h1 data-i18n="title"></h1>
+            <p class="lede" data-i18n="lede"></p>
+            <p class="lede" data-i18n="ledeNote"></p>
+          </div>
+        </div>
+        <label class="lang-picker">
+          <span class="visually-hidden" data-i18n="language"></span>
+          <select id="locale"></select>
+        </label>
+      </header>
+
+      <main class="workspace">
+        <div class="column column-edit">
+          <section class="panel panel-input">
+            <label for="input" class="panel-title" data-i18n="inputLabel"></label>
+            <textarea id="input" rows="6" maxlength="5000"></textarea>
+            <div class="script-mode">
+              <span data-i18n="scriptLabel"></span>
+              <div class="segmented" role="group">
+                <button id="script-auto" type="button" aria-pressed="true" data-i18n="scriptAuto"></button>
+                <button id="script-traditional" type="button" aria-pressed="false" data-i18n="scriptTraditional"></button>
+                <button id="script-simplified" type="button" aria-pressed="false" data-i18n="scriptSimplified"></button>
+              </div>
+            </div>
+            <p class="hint script-hint" data-i18n="scriptHint"></p>
+            <div class="options">
+              <div class="option substitute">
+                <label class="toggle">
+                  <input id="substitute" type="checkbox" checked />
+                  <span data-i18n="substituteMode"></span>
+                </label>
+                <p class="hint" data-i18n="substituteHint"></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel panel-output">
+            <div class="panel-head">
+              <label for="output" class="panel-title" data-i18n="outputLabel"></label>
+              <button id="copy" class="button-primary" type="button" data-i18n="copy"></button>
+            </div>
+            <textarea id="output" rows="4" readonly></textarea>
+            <p class="hint" data-i18n="outputNote"></p>
+          </section>
+        </div>
+
+        <div class="column column-view">
+          <section class="panel panel-preview">
+            <div class="panel-head">
+              <h2 class="panel-title" data-i18n="previewHeading"></h2>
+              <div class="view-controls">
+                <div class="segmented" role="group">
+                  <button id="layout-horizontal" type="button" aria-pressed="false" data-i18n="horizontal"></button>
+                  <button id="layout-vertical" type="button" aria-pressed="true" data-i18n="vertical"></button>
+                </div>
+              </div>
+            </div>
+            <div class="export">
+              <label class="swatch-picker"><span data-i18n="exportInk"></span><input id="export-ink" type="color" value="#000000" /></label>
+              <label class="swatch-picker"><span data-i18n="exportPaper"></span><input id="export-paper" type="color" value="#ffffff" disabled /></label>
+              <label class="toggle"><input id="export-transparent" type="checkbox" checked /><span data-i18n="exportTransparent"></span></label>
+              <button id="export-png" class="button-primary" type="button" data-i18n="exportPng"></button>
+            </div>
+            <div id="detail-panel" class="detail-panel" hidden>
+              <p id="detail-title" class="detail-title"></p>
+              <p id="detail-note" class="detail-note" hidden></p>
+              <div id="variant-options" class="variant-options"></div>
+              <p id="variant-note" class="hint" data-i18n="variantNote"></p>
+              <p id="detail-links" class="detail-links"></p>
+            </div>
+            <div class="rubbing">
+              <div id="preview" class="preview vertical" lang="zh-Hant"></div>
+              <p id="font-status" class="font-status" hidden></p>
+            </div>
+            <p id="stats" class="stats" aria-live="polite"></p>
+            <ul id="legend" class="legend">
+              <li data-kind="original" hidden><span class="swatch original"></span><span data-i18n="legendOriginal"></span></li>
+              <li data-kind="simplified" hidden><span class="swatch simplified"></span><span data-i18n="legendSimplified"></span></li>
+              <li data-kind="variant" hidden><span class="swatch variant"></span><span data-i18n="legendVariant"></span></li>
+              <li data-kind="noGlyph" hidden><span class="swatch no-glyph"></span><span data-i18n="legendNoGlyph"></span></li>
+              <li data-kind="unmatched" hidden><span class="swatch no-seal"></span><span data-i18n="legendNoSeal"></span></li>
+            </ul>
+            <p class="hint" data-i18n="clickHint"></p>
+          </section>
+        </div>
+      </main>
+
+      <details class="about">
+        <summary data-i18n="aboutTitle"></summary>
+        <div id="about-body" class="about-body"></div>
+      </details>
+
+      <footer class="footer">
+        <p data-i18n="fontCredit"></p>
+        <p id="source"></p>
+        <p id="font-warning" hidden></p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
