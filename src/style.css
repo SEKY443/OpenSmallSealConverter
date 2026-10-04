@@ -643,6 +643,10 @@ select {
   margin: 4px 0;
 }
 
+.footer a {
+  color: var(--accent);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
